@@ -66,7 +66,6 @@ public class ConnectionString {
     @AfterTest
     public void TearDownTest() {
         try {
-            driver.close();
             driver.quit();
             System.out.println("Now Application Quit the Appium Driver");
         } catch (Exception ex) {
