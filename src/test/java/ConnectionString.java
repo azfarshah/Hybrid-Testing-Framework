@@ -3,9 +3,14 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
@@ -36,7 +41,7 @@ public class ConnectionString {
             capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
             capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "9");
             capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "R9AMA1038DJ");
-            capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 60);
+            capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 30);
             //capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "Chrome");
             capabilities.setCapability(MobileCapabilityType.APP, "C:\\Users\\Azfar.Hussain\\Downloads\\Attendance Manager_v1.0.apk");
             capabilities.setCapability(MobileCapabilityType.NO_RESET, true);
@@ -44,6 +49,7 @@ public class ConnectionString {
             URL url = new URL("http://127.0.0.1:4723/wd/hub");
             driver = new AndroidDriver<MobileElement>(url, capabilities);
             driver.manage().timeouts().implicitlyWait(90, TimeUnit.SECONDS);
+            System.out.println("Opening Appium Server");
 
         } catch (Exception ex) {
             System.out.println("Cause is : " + ex.getCause());
