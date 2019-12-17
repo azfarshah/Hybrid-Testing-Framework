@@ -1,3 +1,4 @@
+
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
@@ -12,24 +13,21 @@ import java.util.concurrent.TimeUnit;
 public class ConnectionString {
 
     //region Appium Driver
-    /*
-    ###############################################################################################################
+    /*#############################################################################################################
     # AppiumDriver : It inherits from the RemoteWebDriver and adds functions that are handy for mobile automation.#
     # It can be used to automate both Android and iOS apps; however, it lacks device family-specific functions.   #
     # The direct subclasses are AndroidDriver , IOSDriver , and WindowsDriver                                     #
-    ###############################################################################################################
-     */
+    #############################################################################################################*/
     AppiumDriver driver;
     //endregion
 
     //region Setup Method
-    /*
-    ################################################################################################################
+
+    /*##############################################################################################################
     # Setup Method : This method is used to define the Desired Capabilities. Desired Capabilities is a class used  #
     # to declare a set of basic requirements such as combinations of browsers, operating systems, browser versions #
     # Device Platform Name, Platform Version, Device Name etc.                                                     #
-    ################################################################################################################
-    */
+    ##############################################################################################################*/
     @BeforeTest
     public void setUp() {
         try {
@@ -56,17 +54,14 @@ public class ConnectionString {
     //endregion
 
     //region TearDown Method
-    /*
-    #####################################################################################################
+    /*###################################################################################################
     # Teardown blocks registered during a test method's execution are run after that test method ends,  #
     # before the tearDown() instance method is called. tearDown() class method to perform final cleanup #
     # after all test methods complete.                                                                  #
-    #####################################################################################################
-    */
+    ###################################################################################################*/
     @AfterTest
     public void TearDownTest() {
         try {
-            driver.close();
             driver.quit();
             System.out.println("Now Application Quit the Appium Driver");
         } catch (Exception ex) {
