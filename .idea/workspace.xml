@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b972058-8e3f-4a4b-9889-637f3ead7e0e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Base/BaseUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/EmployeeRegPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ConnectionString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ConnectionString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SampleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SampleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ConnectionString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Connection/ConnectionString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SampleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SampleTest/EmployeeReg.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,18 +46,18 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/Official Stuff/Skill Orbit Backup/Projects/NBO/22ndMay@Shahzaib/Shahzaib_SourceCode/custom_bdd_framework" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Backup\Automation Training\Hybrid-Testing-Framework" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.SampleTest.launchApp">
+  <component name="RunManager" selected="TestNG.ExecuteTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.hybrid_testing_framework.Main" />
       <module name="Automation Training" />
@@ -67,10 +68,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SampleTest.launchApp" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="EmployeeReg.launchApp" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Automation Training" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SampleTest" />
+      <option name="MAIN_CLASS_NAME" value="SampleTest.EmployeeReg" />
       <option name="METHOD_NAME" value="launchApp" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -79,9 +80,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ExecuteTest" type="TestNG" temporary="true">
+      <module name="Automation Training" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SampleTest.EmployeeReg" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="TestNG.ExecuteTest" />
+      <item itemvalue="TestNG.EmployeeReg.launchApp" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.SampleTest.launchApp" />
+        <item itemvalue="TestNG.ExecuteTest" />
+        <item itemvalue="TestNG.EmployeeReg.launchApp" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="TestNG.EmployeeReg.launchApp" />
       </list>
     </recent_temporary>
   </component>
@@ -135,38 +164,80 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="361" y="77" key="#Project_Structure/0.0.1536.834@0.0.1536.834" timestamp="1576586651372" />
-    <state x="223" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576077593665">
+    <state x="223" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578467935409">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="223" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1576077593665" />
+    <state x="223" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1578467935409" />
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1577786601786">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1577786601786" />
+    <state x="498" y="202" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1576594780407">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="498" y="202" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.834@0.0.1536.834" timestamp="1576594780407" />
+    <state x="503" y="107" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1577883690758">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="503" y="107" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1536.834@0.0.1536.834" timestamp="1577883690758" />
     <state x="618" y="307" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1576077504117">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="618" y="307" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.834@0.0.1536.834" timestamp="1576077504117" />
-    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1576586501028">
+    <state x="549" y="173" key="FileChooserDialogImpl" timestamp="1578470950227">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1576586501028" />
-    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1576586501028">
+    <state x="549" y="173" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1578470950227" />
+    <state width="1493" height="211" key="GridCell.Tab.0.bottom" timestamp="1578477321119">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1576586501028" />
-    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1576586501028">
+    <state width="1237" height="165" key="GridCell.Tab.0.bottom/0.0.1536.834/1920.0.1280.689@1920.0.1280.689" timestamp="1576734946985" />
+    <state width="1493" height="211" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1578477321119" />
+    <state width="1493" height="211" key="GridCell.Tab.0.center" timestamp="1578477321119">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1576586501028" />
-    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1576586501028">
+    <state width="1237" height="165" key="GridCell.Tab.0.center/0.0.1536.834/1920.0.1280.689@1920.0.1280.689" timestamp="1576734946985" />
+    <state width="1493" height="211" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1578477321119" />
+    <state width="1493" height="211" key="GridCell.Tab.0.left" timestamp="1578477321119">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1576586501028" />
-    <state x="369" y="122" key="SettingsEditor" timestamp="1576572981494">
+    <state width="1237" height="165" key="GridCell.Tab.0.left/0.0.1536.834/1920.0.1280.689@1920.0.1280.689" timestamp="1576734946983" />
+    <state width="1493" height="211" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1578477321119" />
+    <state width="1493" height="211" key="GridCell.Tab.0.right" timestamp="1578477321119">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
+    <state width="1237" height="165" key="GridCell.Tab.0.right/0.0.1536.834/1920.0.1280.689@1920.0.1280.689" timestamp="1576734946985" />
+    <state width="1493" height="211" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1578477321119" />
+    <state width="1493" height="265" key="GridCell.Tab.1.bottom" timestamp="1578468243214">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="265" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1578468243214" />
+    <state width="1493" height="265" key="GridCell.Tab.1.center" timestamp="1578468243214">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="265" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1578468243214" />
+    <state width="1493" height="265" key="GridCell.Tab.1.left" timestamp="1578468243214">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="265" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1578468243214" />
+    <state width="1493" height="265" key="GridCell.Tab.1.right" timestamp="1578468243214">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="265" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1578468243214" />
+    <state x="369" y="122" key="SettingsEditor" timestamp="1577883821736">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="369" y="122" key="SettingsEditor/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1576643490338" />
     <state x="2381" y="168" key="SettingsEditor/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1576124768554" />
-    <state x="369" y="122" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1576572981494" />
-    <state x="465" y="243" key="com.intellij.ide.util.TipDialog" timestamp="1576124410991">
+    <state x="369" y="122" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1577883821736" />
+    <state x="361" y="151" key="Vcs.Push.Dialog.v2" timestamp="1576587513940">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="465" y="243" key="com.intellij.ide.util.TipDialog/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1576124410991" />
+    <state x="361" y="151" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1576587513940" />
+    <state x="465" y="243" key="com.intellij.ide.util.TipDialog" timestamp="1578463564648">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="465" y="243" key="com.intellij.ide.util.TipDialog/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1576643358703" />
+    <state x="465" y="243" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1578463564648" />
   </component>
 </project>

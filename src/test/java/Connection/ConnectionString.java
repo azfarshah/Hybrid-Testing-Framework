@@ -1,4 +1,6 @@
+package Connection;
 
+import Base.BaseUtil;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
@@ -8,14 +10,9 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
-import java.net.URL;
-import java.util.concurrent.TimeUnit;
-
-public class ConnectionString {
+public class ConnectionString  extends BaseUtil {
 
     //region Appium Driver
     /*#############################################################################################################
@@ -23,9 +20,11 @@ public class ConnectionString {
     # It can be used to automate both Android and iOS apps; however, it lacks device family-specific functions.   #
     # The direct subclasses are AndroidDriver , IOSDriver , and WindowsDriver                                     #
     #############################################################################################################*/
-    AppiumDriver driver;
+    //public AppiumDriver driver;
     //endregion
 
+    public ConnectionString(){
+    }
     //region Setup Method
 
     /*##############################################################################################################
@@ -33,7 +32,8 @@ public class ConnectionString {
     # to declare a set of basic requirements such as combinations of browsers, operating systems, browser versions #
     # Device Platform Name, Platform Version, Device Name etc.                                                     #
     ##############################################################################################################*/
-    @BeforeTest
+    /*
+    @BeforeClass
     public void setUp() {
         try {
             DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -47,8 +47,8 @@ public class ConnectionString {
             capabilities.setCapability(MobileCapabilityType.NO_RESET, true);
 
             URL url = new URL("http://127.0.0.1:4723/wd/hub");
-            driver = new AndroidDriver<MobileElement>(url, capabilities);
-            driver.manage().timeouts().implicitlyWait(90, TimeUnit.SECONDS);
+            appDriver = new AndroidDriver(url, capabilities);
+            appDriver.manage().timeouts().implicitlyWait(90, TimeUnit.SECONDS);
             System.out.println("Opening Appium Server");
 
         } catch (Exception ex) {
@@ -57,6 +57,7 @@ public class ConnectionString {
             ex.printStackTrace();
         }
     }
+     */
     //endregion
 
     //region TearDown Method
@@ -65,10 +66,10 @@ public class ConnectionString {
     # before the tearDown() instance method is called. tearDown() class method to perform final cleanup #
     # after all test methods complete.                                                                  #
     ###################################################################################################*/
-    @AfterTest
+    @AfterClass
     public void TearDownTest() {
         try {
-            driver.quit();
+            appDriver.quit();
             System.out.println("Now Application Quit the Appium Driver");
         } catch (Exception ex) {
             ex.printStackTrace();
